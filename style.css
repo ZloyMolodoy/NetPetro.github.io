@@ -1,0 +1,38 @@
+*{ padding: 0; margin: 0; }
+
+/* @font-face {
+    font-family: R-M;
+    font-weight: 500;
+    src: url("/fonts/Rubik-Medium.ttf");
+}
+@font-face {
+    font-family: R-R;
+    font-weight: 400;
+    src: url("/fonts/Rubik-Regular.ttf");
+} */
+.container-to
+{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.body-text
+{
+    color: #2F3044;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.body-div
+{
+    background-color: white;
+    width: 75%;
+    height: 200px;
+}
+.body-text__block
+{
+    color: #B5B5C3;
+    font-weight: 500;
+    font-size: 16px;
+}
