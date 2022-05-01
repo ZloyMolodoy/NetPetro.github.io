@@ -12,10 +12,18 @@
 } */
 .container-to
 {
-    max-width: 50%;
+    max-width: 60%;
     margin: 0 auto;
 }
 
+.pdl-30
+{
+    padding: 0 30px;
+}
+.mgl-30
+{
+    margin-left: 30px;
+}
 .body-text
 {
     color: #2F3044;
@@ -27,12 +35,23 @@
 .body-div
 {
     background-color: white;
-    width: 75%;
-    height: 200px;
+    width: 80%;
+    height: 500px;
 }
 .body-text__block
 {
     color: #B5B5C3;
     font-weight: 500;
     font-size: 16px;
+}
+
+.dropbox-a
+{
+    margin-top: 30px;
+    background-color: #F3F6F9;
+    color: #0E52A0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 3px;
 }
