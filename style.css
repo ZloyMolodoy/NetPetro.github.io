@@ -107,7 +107,67 @@
 {
     padding: 1rem 1.25rem;
 }
+.checkbox
+{
+    border: 1px solid #0E52A0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: white;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-check-input:checked[type=checkbox] {
+    background-image: none;
+}
+.rating-div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.rating-div > span
+{
+    padding: 0 5px;
+    color: #0E52A0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+.circle-rating__null
+{
+    margin: 0 5px;
+    background-color: #edf0f3;
+    border-radius: 38px;
+    width: 15px;
+    height: 15px;
+}
+.circle-rating
+{
 
+}
+
+.textarea
+{
+    resize: none;
+    width: 80%;
+    height: 100px;
+    border: 1px solid #ECF0F3;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
 /* Dropdown Button */
 .dropbtn {
     margin-top: 18px;
