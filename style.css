@@ -15,7 +15,14 @@
     max-width: 60%;
     margin: 0 auto;
 }
-
+.pd-5
+{
+    padding: 5px;
+}
+.pdl-5
+{
+    padding-left: 5px;
+}
 .pdl-30
 {
     padding: 0 30px;
@@ -23,6 +30,15 @@
 .mgl-30
 {
     margin-left: 30px;
+}
+.mgt-40
+{
+    margin-top:40px;
+}
+.RR
+{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
 }
 .body-text
 {
@@ -32,19 +48,35 @@
     font-size: 20px;
     padding: 20px 0;
 }
+.body-text__block-other
+{
+    color: #2F3044;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
 .body-div
 {
     background-color: white;
     width: 80%;
-    height: 500px;
+    padding: 30px 20px;
+    border-radius: 12px;
 }
 .body-text__block
 {
     color: #B5B5C3;
     font-weight: 500;
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
 }
-
+.block-div
+{
+    margin-top: 25px;
+}
+.block-div > div
+{
+    padding: 5px 0;
+}
 .dropbox-a
 {
     margin-top: 30px;
@@ -55,3 +87,64 @@
     border-radius: 4px;
     padding: 3px;
 }
+
+/* Dropdown Button */
+.dropbtn {
+    margin-top: 18px;
+    background-color: #ECF0F3;
+    color: #B5B5C3;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #ECF0F3;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    min-width: 40%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #ECF0F3;
+  }
+  
+
+  /* .dropdown {
+    
+  } */
+  
+  .dropdown-content {
+    display: none;
+    background-color: #ECF0F3;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+  .dropdown-content a {
+    color: #B5B5C3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  .dropdown-content a:hover {background-color: #ddd}
+  
+ 
+  .show {display: block;}
+
+
+
+  /* media */
+
+  @media (max-width:426px) {
+    .body-div{ width: 100%;}
+      
+  }
