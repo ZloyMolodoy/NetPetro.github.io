@@ -13,13 +13,17 @@ a{text-decoration: none;}
 {
     padding-top: 5px;
 }
+.pdr-10
+{
+    padding-right: 10px;
+}
 .pdl-5
 {
     padding-left: 5px;
 }
 .pdl-30
 {
-    padding: 0 30px;
+    padding-left:  30px;
 }
 .pdt-20
 {
