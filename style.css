@@ -256,6 +256,8 @@ a{text-decoration: none;}
     box-sizing: border-box;
     border-radius: 4px;
     padding: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
 }
 
 .button-adds
@@ -267,7 +269,7 @@ a{text-decoration: none;}
 /* Dropdown Button */
 .dropbtn {
     margin-top: 18px;
-    background-color: #ECF0F3;
+    background-color: white;
     color: #B5B5C3;
     padding: 16px;
     font-size: 16px;
@@ -286,7 +288,7 @@ a{text-decoration: none;}
   
 
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #ECF0F3;
+    background-color: white;
   }
   
 
