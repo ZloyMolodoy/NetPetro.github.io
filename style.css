@@ -21,6 +21,10 @@ a{text-decoration: none;}
 {
     padding: 0 30px;
 }
+.pdt-20
+{
+    padding-top: 20px;
+}
 .mgl-30
 {
     margin-left: 30px;
@@ -40,6 +44,10 @@ a{text-decoration: none;}
 .mgt-20
 {
     margin-top: 20px;
+}
+.mgt-30
+{
+    margin-top: 30px;
 }
 .mgt-40
 {
@@ -240,12 +248,18 @@ a{text-decoration: none;}
     box-sizing: border-box;
     border-radius: 4px;
     padding: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
 }
 #other
 {
     width: 60%;
 }
-
+#comments
+{
+    width: 70%;
+    height: 160px;
+}
 .textarea-link
 {
     margin-top: 13px;
@@ -264,7 +278,6 @@ a{text-decoration: none;}
 {
     color: #0E52A0;
     text-decoration-line: underline;
-    padding: 1px;
 }
 /* Dropdown Button */
 .dropbtn {
@@ -272,6 +285,7 @@ a{text-decoration: none;}
     background-color: white;
     color: #B5B5C3;
     padding: 16px;
+    margin-bottom: 20px;
     font-size: 16px;
     border: 1px solid #ECF0F3;
     box-sizing: border-box;
