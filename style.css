@@ -130,6 +130,10 @@ a{text-decoration: none;}
 {
     padding: 1rem 1.25rem;
 }
+.dropbox-body > div 
+{
+    margin-top: 10px;
+}
 .btn-check {
     position: absolute;
     clip: rect(0,0,0,0);
