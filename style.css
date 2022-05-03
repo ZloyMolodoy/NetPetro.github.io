@@ -25,6 +25,14 @@ a{text-decoration: none;}
 {
     margin-left: 30px;
 }
+.mgt-15
+{
+    margin-top: 15px;
+}
+.mgt-30
+{
+    margin-top:30px
+}
 .mgt-20
 {
     margin-top: 20px;
@@ -224,6 +232,17 @@ a{text-decoration: none;}
     resize: none;
     width: 300px;
     height: 100px;
+    border: 1px solid #ECF0F3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px;
+}
+.textarea-link
+{
+    margin-top: 13px;
+    resize: none;
+    width: 80%;
+    height: 40px;
     border: 1px solid #ECF0F3;
     box-sizing: border-box;
     border-radius: 4px;
