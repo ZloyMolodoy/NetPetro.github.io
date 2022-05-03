@@ -5,8 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="chart_div"></div>
+
+
 </body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+
+    google.charts.load('current', {'packages':['corechart']});
+
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Страны');
+      data.addColumn('number', '');
+      data.addRows([
+        ['Россия', 70],
+        ['США', 20],
+        ['Украина', 10]
+      ]);
+
+
+      var options = {'width':400,
+                     'height':300,
+                    'enableInteractivity':false,
+                    'legend':{ position:'left', },
+                    'legend.alignment':"center",
+                    'slices': 
+                    {
+                        0:{offset: 0, color: '#0E52A0'},
+                        1:{offset: 0.1, color: '#E1F0FF'},
+                        2:{offset: 0.1, color: '#A7A8BB'},
+                    }
+                };
+
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
 </html>
