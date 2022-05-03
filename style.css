@@ -102,6 +102,17 @@ a{text-decoration: none;}
 {
     padding: 5px 0;
 }
+.dropbox-button1
+{
+    border: 0;
+    margin-top: 5px;
+    background-color: #F3F6F9;
+    color: #0E52A0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 2px 3px 2px 4px;
+}
 .dropbox-button
 {
     text-decoration: none;
@@ -114,7 +125,7 @@ a{text-decoration: none;}
     border-radius: 4px;
     padding: 2px 3px 2px 4px;
 }
-.dropbox-button:active{ background-color: black;}
+.dropbox-button:active, .dropbox-body:target, .dropbox-body:focus-visible{ border: 1px solid #0E52A0}
 .dropbox-body
 {
     padding: 1rem 1.25rem;
@@ -142,6 +153,18 @@ a{text-decoration: none;}
     font-size: 1rem;
     border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.dropbox-image__minus{ display: none;}
+.dropbox-image__minus:active+.btn-outline-primary1, .dropbox-image__minus:checked+.dropbox-image__minus, .dropbox-image__minus.active, .dropbox-image__minus.dropdown-toggle.show, .dropbox-image__minus:active
+{
+   display: block;
+}
+.btn-outline-primary1:active+.btn-outline-primary1, .btn-check:checked+.btn-outline-primary1, .btn-outline-primary1.active, .btn-outline-primary1.dropdown-toggle.show, .btn-outline-primary1:active
+{
+    color: #eaecee;
+    border: 1px solid #0E52A0;
+    /* background-color: #0E52A0; */
 }
 .btn-outline-primary {
     color: #eaecee;
@@ -200,7 +223,7 @@ a{text-decoration: none;}
     border: 1px solid #ECF0F3;
     box-sizing: border-box;
     border-radius: 4px;
-
+    padding: 10px;
 }
 
 /* Dropdown Button */
