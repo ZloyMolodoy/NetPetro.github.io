@@ -236,7 +236,7 @@ body
     height: 16px;
     margin-top: 0.25em;
     vertical-align: top;
-    background-color: #fff;
+    background-color: #F3F6F9;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -246,11 +246,13 @@ body
     appearance: none;
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
+    border-radius: 50%;
+    border: none;
 }
 .form-check-input[type=radio] {
     border-radius: 50%;
 }
-.form-check-input:checked[type=radio] {
+.form-check-input__active {
     background-image:url(images/checkraduis.png);
 }
 .textarea
