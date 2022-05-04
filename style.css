@@ -155,7 +155,7 @@ body
     border-radius: 4px;
     padding: 2px 3px 2px 4px;
 }
-.dropbox-button:active, .dropbox-body:target, .dropbox-body:focus-visible{ border: 1px solid #0E52A0}
+.dropbox-button__active{ border: 1px solid #0E52A0}
 .dropbox-body
 {
     padding: 1rem 1.25rem;

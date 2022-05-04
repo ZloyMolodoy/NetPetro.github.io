@@ -24,14 +24,12 @@
             <p class="body-text__block pdl-30">Технические компетенции*</p>
             <div class="block-div">
                 <div>
-                    <!-- <input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-Two" aria-expanded="false" aria-controls="collapseOne-Two">
-                    <label class="dropbox-button1 btn-outline-primary1" for="btncheck9"><img class="dropbox-image_plus" id="plus" src="images/+.png"></label> -->
-                    <button class="dropbox-button  mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">+</button><a class="RR pd-5">Upstream</a>
+                    <button class="dropbox-button  mgl-30" type="button" onclick="changeText(this)" data-show="true" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">+</button><a class="RR pd-5">Upstream</a>
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         
                         <div class="dropbox-body">
                             
-                        <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-One" aria-expanded="false" aria-controls="collapseOne-One">+</button><span class="RR pd-5">Бурение</span></div>
+                        <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-One" aria-expanded="false" aria-controls="collapseOne-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Бурение</span></div>
                             <div id="collapseOne-One" class="accordion-collapse collapse" aria-labelledby="headingOne-One" data-bs-parent="#accordionExample">
                                 <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                     <div>
@@ -41,7 +39,7 @@
                                         <div id="collapseOne-Two" class="accordion-collapse collapse" aria-labelledby="headingOne-Two" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
                                             <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
+                                                <span>1</span> <span id="rating-4" data-stars="5"></span><span>5</span>
                                             </div>
                         
                                             <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
@@ -246,7 +244,7 @@
                                     </div>
                                 </div>
                               </div>
-                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-One" aria-expanded="false" aria-controls="collapseTwo-One">+</button><span class="RR pd-5">Геология и геофизика</span></div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-One" aria-expanded="false" aria-controls="collapseTwo-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Геология и геофизика</span></div>
                             <div id="collapseTwo-One" class="accordion-collapse collapse" aria-labelledby="headingTwo-One" data-bs-parent="#accordionExample">
                                 <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                     <div>
@@ -255,7 +253,7 @@
                                     
                                 </div>
                               </div>
-                              <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-One" aria-expanded="false" aria-controls="collapseThree-One">+</button><span class="RR pd-5">Управление проектами</span></div>
+                              <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-One" aria-expanded="false" aria-controls="collapseThree-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Управление проектами</span></div>
                               <div id="collapseThree-One" class="accordion-collapse collapse" aria-labelledby="headingThree-One" data-bs-parent="#accordionExample">
                                   <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                       <div>
@@ -264,7 +262,7 @@
                                       
                                   </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour-One" aria-expanded="false" aria-controls="collapseFour-One">+</button><span class="RR pd-5">Инжиниринг</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour-One" aria-expanded="false" aria-controls="collapseFour-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Инжиниринг</span></div>
                                 <div id="collapseFour-One" class="accordion-collapse collapse" aria-labelledby="headingFour-One" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -273,7 +271,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive-One" aria-expanded="false" aria-controls="collapseFive-One">+</button><span class="RR pd-5">Разработка пластов</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive-One" aria-expanded="false" aria-controls="collapseFive-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Разработка пластов</span></div>
                                 <div id="collapseFive-One" class="accordion-collapse collapse" aria-labelledby="headingFive-One" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -282,7 +280,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix-One" aria-expanded="false" aria-controls="collapseSix-One">+</button><span class="RR pd-5">Коммерческие компетенции</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix-One" aria-expanded="false" aria-controls="collapseSix-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Коммерческие компетенции</span></div>
                                 <div id="collapseSix-One" class="accordion-collapse collapse" aria-labelledby="headingSix-One" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -291,7 +289,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven-One" aria-expanded="false" aria-controls="collapseSeven-One">+</button><span class="RR pd-5">Управление персоналом (HR)</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven-One" aria-expanded="false" aria-controls="collapseSeven-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Управление персоналом (HR)</span></div>
                                 <div id="collapseSeven-One" class="accordion-collapse collapse" aria-labelledby="headingSeven-One" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -300,7 +298,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight-One" aria-expanded="false" aria-controls="collapseEight-One">+</button><span class="RR pd-5">Управление по коммуникации и общественным связям (PR)</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight-One" aria-expanded="false" aria-controls="collapseEight-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Управление по коммуникации и общественным связям (PR)</span></div>
                                 <div id="collapseEight-One" class="accordion-collapse collapse" aria-labelledby="headingEight-One" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -309,7 +307,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine-One" aria-expanded="false" aria-controls="collapseNine-One">+</button><span class="RR pd-5">Энергетика</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine-One" aria-expanded="false" aria-controls="collapseNine-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Энергетика</span></div>
                                 <div id="collapseNine-One" class="accordion-collapse collapse" aria-labelledby="headingNine-One" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -318,7 +316,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10">+</button><span class="RR pd-5">ТКРС</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">ТКРС</span></div>
                                 <div id="collapse-10" class="accordion-collapse collapse" aria-labelledby="heading-10" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -327,7 +325,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11">+</button><span class="RR pd-5">Капитальное строительство</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Капитальное строительство</span></div>
                                 <div id="collapse-11" class="accordion-collapse collapse" aria-labelledby="heading-11" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -336,7 +334,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12">+</button><span class="RR pd-5">ОТ, ПБ и ООС</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">ОТ, ПБ и ООС</span></div>
                                 <div id="collapse-12" class="accordion-collapse collapse" aria-labelledby="heading-12" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -345,7 +343,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-13" aria-expanded="false" aria-controls="collapse-13">+</button><span class="RR pd-5">Логистика и транспорт</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-13" aria-expanded="false" aria-controls="collapse-13" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Логистика и транспорт</span></div>
                                 <div id="collapse-13" class="accordion-collapse collapse" aria-labelledby="heading-13" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -354,7 +352,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-14" aria-expanded="false" aria-controls="collapse-14">+</button><span class="RR pd-5">Нефтепереработка</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-14" aria-expanded="false" aria-controls="collapse-14" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Нефтепереработка</span></div>
                                 <div id="collapse-14" class="accordion-collapse collapse" aria-labelledby="heading-14" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -363,7 +361,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-15" aria-expanded="false" aria-controls="collapse-15">+</button><span class="RR pd-5">Коммерция и логистика</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-15" aria-expanded="false" aria-controls="collapse-15" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Коммерция и логистика</span></div>
                                 <div id="collapse-15" class="accordion-collapse collapse" aria-labelledby="heading-15" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -372,7 +370,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-16" aria-expanded="false" aria-controls="collapse-16">+</button><span class="RR pd-5">Супервайзинг ТКРС</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-16" aria-expanded="false" aria-controls="collapse-16" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Супервайзинг ТКРС</span></div>
                                 <div id="collapse-16" class="accordion-collapse collapse" aria-labelledby="heading-16" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -381,7 +379,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-17" aria-expanded="false" aria-controls="collapse-17">+</button><span class="RR pd-5">Снабжение</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-17" aria-expanded="false" aria-controls="collapse-17" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Снабжение</span></div>
                                 <div id="collapse-17" class="accordion-collapse collapse" aria-labelledby="heading-17" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -390,7 +388,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-18" aria-expanded="false" aria-controls="collapse-18">+</button><span class="RR pd-5">Повышение энергоэффективности</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-18" aria-expanded="false" aria-controls="collapse-18" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Повышение энергоэффективности</span></div>
                                 <div id="collapse-18" class="accordion-collapse collapse" aria-labelledby="heading-18" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -399,7 +397,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-19" aria-expanded="false" aria-controls="collapse-19">+</button><span class="RR pd-5">Проектирование в нефтепереработке и нефтегазохимии</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-19" aria-expanded="false" aria-controls="collapse-19" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Проектирование в нефтепереработке и нефтегазохимии</span></div>
                                 <div id="collapse-19" class="accordion-collapse collapse" aria-labelledby="heading-19" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -408,7 +406,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-20" aria-expanded="false" aria-controls="collapse-20">+</button><span class="RR pd-5">Разработка шельфовых месторождений (при отработке разбивается на несколько компетенций)</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-20" aria-expanded="false" aria-controls="collapse-20" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Разработка шельфовых месторождений (при отработке разбивается на несколько компетенций)</span></div>
                                 <div id="collapse-20" class="accordion-collapse collapse" aria-labelledby="heading-20" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -417,7 +415,7 @@
                                         
                                     </div>
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-21" aria-expanded="false" aria-controls="collapse-21">+</button><span class="RR pd-5">Экономика, финансы, бухгалтерский и налоговый учет (при отработке разбивается на несколько компетенций)</span></div>
+                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-21" aria-expanded="false" aria-controls="collapse-21" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Экономика, финансы, бухгалтерский и налоговый учет (при отработке разбивается на несколько компетенций)</span></div>
                                 <div id="collapse-21" class="accordion-collapse collapse" aria-labelledby="heading-21" data-bs-parent="#accordionExample">
                                     <div class="dropbox-body RR" style="padding: 1rem 5rem;">
                                         <div>
@@ -433,7 +431,7 @@
                 </div>
                 <!--  -->
                 <div>
-                    <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">+</button><a class="RR pd-5">Midstream</a>
+                    <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="changeText(this)" data-show="true">+</button><a class="RR pd-5">Midstream</a>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="dropbox-body">
                           
@@ -441,7 +439,7 @@
                       </div>
                 </div>
                 <div>
-                    <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">+</button><a class="RR pd-5">Downstream</a>
+                    <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="changeText(this)" data-show="true">+</button><a class="RR pd-5">Downstream</a>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="dropbox-body">
                           
@@ -449,7 +447,7 @@
                       </div>
                 </div>
                 <div>
-                    <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">+</button><a class="RR pd-5">Alternative energy</a>
+                    <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="changeText(this)" data-show="true">+</button><a class="RR pd-5">Alternative energy</a>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                         <div class="dropbox-body">
                           
@@ -726,6 +724,18 @@
     </div>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery-rate-picker.js"></script>
+<script>
+    $.ratePicker("#rating-4", {
+        max :10,
+        rgbOn:"#2ecc71",
+        rgbOff:"#bdc3c7",
+        rgbSelection:"#2ecc71",
+        indicator:"fa-circle"
+    });
+</script>
+<script src="js/func.js"></script>
 <!-- <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
