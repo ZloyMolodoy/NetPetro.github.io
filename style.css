@@ -263,6 +263,7 @@ body {
     color-adjust: exact;
     border-radius: 50%;
     border: none;
+    cursor: pointer;
 }
 
 .form-check-input[type=radio] {
