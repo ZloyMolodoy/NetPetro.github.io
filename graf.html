@@ -11,9 +11,13 @@
     <div id="chart_div"></div>
 
 
+
+    <div class="RR" id="chart_div1"></div>
+
 </body>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
+
+<script type="text/javascript"> //первый
 
     google.charts.load('current', {'packages':['corechart']});
 
@@ -49,4 +53,31 @@
       chart.draw(data, options);
     }
   </script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+  
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Месяц', 'Просмотры'],
+            ['Январь',  27],
+            ['Февраль',  30],
+            ['Март',  26],
+            ['Апрель',  15],
+            ['Май',  100]
+          ]);
+  
+          var options = {
+            'width':600,
+            'height':400,
+            hAxis: {title: 'Месяц',  titleTextStyle: {color: '#0E52A0'},  },
+            vAxis: {minValue: 0},
+            'legend':{ position:'left', },
+            
+          };
+  
+          var chart = new google.visualization.AreaChart(document.getElementById('chart_div1'));
+          chart.draw(data, options);
+        }
+      </script>
 </html>
