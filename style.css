@@ -234,6 +234,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    padding: 10px 0;
 }
 
 .display-flex>span {
