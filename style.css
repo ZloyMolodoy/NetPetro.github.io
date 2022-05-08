@@ -80,6 +80,11 @@ body {
     font-weight: 500;
 }
 
+.quest-link
+{
+    background-image: url(images/quest.png);
+    
+}
 .body-text {
     color: #2F3044;
     font-family: 'Rubik', sans-serif;
