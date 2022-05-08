@@ -83,7 +83,8 @@ body {
 .quest-link
 {
     background-image: url(images/quest.png);
-    
+    background-repeat: no-repeat;
+    color: transparent;
 }
 .body-text {
     color: #2F3044;
