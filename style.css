@@ -175,7 +175,7 @@ body {
 }
 
 .dropbox-body {
-    padding: 1rem 1.25rem;
+    padding: 1rem 2.25rem;
 }
 
 .dropbox-body>div {
@@ -389,13 +389,39 @@ body {
     display: none;
 }
 
+#spans
+{
+    padding-left: 30px;
+}
 
 /* media */
 
 @media (max-width:426px) {
+    .container-to
+    {
+        max-width: 90%;
+    }
+
     .body-div {
         width: 100%;
+        padding: 30px 0;
     }
+    .dropbox-body{
+        padding: 1rem 2.2rem;
+    }
+    .dropbox-body > div
+    {
+        padding: 5px 0;
+    }
+    #other
+    {
+        width: 80%;
+    }
+    #spans
+    {
+        padding-left: 30px;
+    }
+
 
 }
 
@@ -403,4 +429,7 @@ body {
     .textarea {
         width: 232px;
     }
+    /* .dropbox-body{
+        padding: 1rem 1.2rem;
+    } */
 }
