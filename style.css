@@ -394,6 +394,15 @@ body {
     padding-left: 30px;
 }
 
+.div-img
+{
+    margin-bottom: 50px;
+
+}
+.div-img > img 
+{
+    padding: 0 5px
+}
 /* media */
 
 @media (max-width:426px) {
