@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 </head>
+
 <body>
-    <div class="container-to" >
+    <div class="container-to">
         <p class="body-text">Заполненость анкеты</p>
-        <div class="progress" > <!-- outside progress bar -->
-            <div class="progress-bar RM" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div> <!-- inside progress bar -->
+        <div class="progress">
+            <!-- outside progress bar -->
+            <div class="progress-bar RM" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%
+            </div> <!-- inside progress bar -->
         </div>
         <div>
             <p class="body-text__block mgt-20">*Поля со звездочкой обязательны для заполнения</p>
@@ -24,712 +28,1141 @@
             <p class="body-text__block pdl-30">Технические компетенции*</p>
             <div class="block-div">
                 <div>
-                    <button class="dropbox-button  mgl-30" type="button" onclick="changeText(this)" data-show="true" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">+</button><a class="RR pd-5">Upstream</a>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        
+                    <button class="dropbox-button  mgl-30" type="button" onclick="changeText(this)" data-show="true"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne">+</button><a class="RR pd-5">Upstream</a>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+
                         <div class="dropbox-body">
-                            
-                        <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-One" aria-expanded="false" aria-controls="collapseOne-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Бурение</span></div>
-                            <div id="collapseOne-One" class="accordion-collapse collapse" aria-labelledby="headingOne-One" data-bs-parent="#accordionExample">
-                                <div class="dropbox-body RR" style="padding: 1rem 5rem;">
+
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne-One" aria-expanded="false"
+                                    aria-controls="collapseOne-One" onclick="changeText(this)"
+                                    data-show="true">+</button><span class="RR pd-5">Бурение</span></div>
+                            <div id="collapseOne-One" class="accordion-collapse collapse"
+                                aria-labelledby="headingOne-One" data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" style="">
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-Two" aria-expanded="false" aria-controls="collapseOne-Two">
+                                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-Two"
+                                            aria-expanded="false" aria-controls="collapseOne-Two">
                                         <label class="btn btn-outline-primary" for="btncheck1"></label>
-                                        <span style="padding: 0 5px">Well Control</span><img src="images/quest.png">
-                                        <div id="collapseOne-Two" class="accordion-collapse collapse" aria-labelledby="headingOne-Two" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Well Control</span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-Two" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-Two" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span><div data-show="true" class="form-check-input" id="rating-1"></div> <div class="form-check-input" id="rating-2" data-show="true"></div>  <div class="form-check-input" id="rating-3" data-show="true"></div> <div class="form-check-input" id="rating-4" data-show="true"></div> <div class="form-check-input" id="rating-5" data-show="true"></div></span><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-Three" aria-expanded="false" aria-controls="collapseOne-Three">
+                                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-Three"
+                                            aria-expanded="false" aria-controls="collapseOne-Three">
                                         <label class="btn btn-outline-primary" for="btncheck2"></label>
-                                        <span style="padding: 0 5px">Drilling materials: casing & tubing, wellheads, completion equipment </span><img src="images/quest.png">
-                                        <div id="collapseOne-Three" class="accordion-collapse collapse" aria-labelledby="headingOne-Three" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Drilling materials: casing & tubing, wellheads,
+                                            completion equipment </span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-Three" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-Three" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-Four" aria-expanded="false" aria-controls="collapseOne-Four">
+                                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-Four"
+                                            aria-expanded="false" aria-controls="collapseOne-Four">
                                         <label class="btn btn-outline-primary" for="btncheck3"></label>
-                                        <span style="padding: 0 5px">Drilling rig equipment  </span><img src="images/quest.png">
-                                        <div id="collapseOne-Four" class="accordion-collapse collapse" aria-labelledby="headingOne-Four" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Drilling rig equipment </span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-Four" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-Four" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-Five" aria-expanded="false" aria-controls="collapseOne-Five">
+                                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-Five"
+                                            aria-expanded="false" aria-controls="collapseOne-Five">
                                         <label class="btn btn-outline-primary" for="btncheck4"></label>
-                                        <span style="padding: 0 5px">Drilling Services: fluids, cement, directional drilling, formation evaluation,  fishing </span><img src="images/quest.png">
-                                        <div id="collapseOne-Five" class="accordion-collapse collapse" aria-labelledby="headingOne-Five" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Drilling Services: fluids, cement, directional
+                                            drilling, formation evaluation, fishing </span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-Five" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-Five" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-Six" aria-expanded="false" aria-controls="collapseOne-Six">
+                                        <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-Six"
+                                            aria-expanded="false" aria-controls="collapseOne-Six">
                                         <label class="btn btn-outline-primary" for="btncheck5"></label>
-                                        <span style="padding: 0 5px">Horizontal and high-angle drilling </span><img src="images/quest.png">
-                                        <div id="collapseOne-Six" class="accordion-collapse collapse" aria-labelledby="headingOne-Six" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Horizontal and high-angle drilling </span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-Six" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-Six" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-Seven" aria-expanded="false" aria-controls="collapseOne-Seven">
+                                        <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-Seven"
+                                            aria-expanded="false" aria-controls="collapseOne-Seven">
                                         <label class="btn btn-outline-primary" for="btncheck6"></label>
-                                        <span style="padding: 0 5px">Reservoir drilling & completions technology</span><img src="images/quest.png">
-                                        <div id="collapseOne-Seven" class="accordion-collapse collapse" aria-labelledby="headingOne-Seven" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Reservoir drilling & completions
+                                            technology</span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-Seven" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-Seven" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-Eight" aria-expanded="false" aria-controls="collapseOne-Eight">
+                                        <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-Eight"
+                                            aria-expanded="false" aria-controls="collapseOne-Eight">
                                         <label class="btn btn-outline-primary" for="btncheck7"></label>
-                                        <span style="padding: 0 5px">Sidetracking and Multilaterals</span><img src="images/quest.png">
-                                        <div id="collapseOne-Eight" class="accordion-collapse collapse" aria-labelledby="headingOne-Eight" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Sidetracking and Multilaterals</span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-Eight" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-Eight" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-Nine" aria-expanded="false" aria-controls="collapseOne-Nine">
+                                        <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-Nine"
+                                            aria-expanded="false" aria-controls="collapseOne-Nine">
                                         <label class="btn btn-outline-primary" for="btncheck8"></label>
-                                        <span style="padding: 0 5px">Rate-of-Penetration Optimization</span><img src="images/quest.png">
-                                        <div id="collapseOne-Nine" class="accordion-collapse collapse" aria-labelledby="headingOne-Nine" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Rate-of-Penetration Optimization</span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-Nine" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-Nine" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-One-One" aria-expanded="false" aria-controls="collapseOne-One-One">
+                                        <input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-One-One"
+                                            aria-expanded="false" aria-controls="collapseOne-One-One">
                                         <label class="btn btn-outline-primary" for="btncheck9"></label>
-                                        <span style="padding: 0 5px">Rig-site management </span><img src="images/quest.png">
-                                        <div id="collapseOne-One-One" class="accordion-collapse collapse" aria-labelledby="headingOne-One-One" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Rig-site management </span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-One-One" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-One-One" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Two" aria-expanded="false" aria-controls="collapseOne-One-Two">
+                                        <input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Two"
+                                            aria-expanded="false" aria-controls="collapseOne-One-Two">
                                         <label class="btn btn-outline-primary" for="btncheck10"></label>
-                                        <span style="padding: 0 5px">Drilling performance improvement</span><img src="images/quest.png">
-                                        <div id="collapseOne-One-Two" class="accordion-collapse collapse" aria-labelledby="headingOne-One-Two" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Drilling performance improvement</span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-One-Two" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-One-Two" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck11" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Three" aria-expanded="false" aria-controls="collapseOne-One-Three">
+                                        <input type="checkbox" class="btn-check" id="btncheck11" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Three"
+                                            aria-expanded="false" aria-controls="collapseOne-One-Three">
                                         <label class="btn btn-outline-primary" for="btncheck11"></label>
-                                        <span style="padding: 0 5px">Well design </span><img src="images/quest.png">
-                                        <div id="collapseOne-One-Three" class="accordion-collapse collapse" aria-labelledby="headingOne-One-Three" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Well design </span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-One-Three" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-One-Three" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck12" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Four" aria-expanded="false" aria-controls="collapseOne-One-Four">
+                                        <input type="checkbox" class="btn-check" id="btncheck12" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Four"
+                                            aria-expanded="false" aria-controls="collapseOne-One-Four">
                                         <label class="btn btn-outline-primary" for="btncheck12"></label>
-                                        <span style="padding: 0 5px">Drilling Project Planning</span><img src="images/quest.png">
-                                        <div id="collapseOne-One-Four" class="accordion-collapse collapse" aria-labelledby="headingOne-One-Four" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Drilling Project Planning</span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-One-Four" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-One-Four" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck13" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Five" aria-expanded="false" aria-controls="collapseOne-One-Five">
+                                        <input type="checkbox" class="btn-check" id="btncheck13" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Five"
+                                            aria-expanded="false" aria-controls="collapseOne-One-Five">
                                         <label class="btn btn-outline-primary" for="btncheck13"></label>
-                                        <span style="padding: 0 5px">Drilling risk management </span><img src="images/quest.png">
-                                        <div id="collapseOne-One-Five" class="accordion-collapse collapse" aria-labelledby="headingOne-One-Five" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Drilling risk management </span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-One-Five" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-One-Five" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck14" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Six" aria-expanded="false" aria-controls="collapseOne-One-Six">
+                                        <input type="checkbox" class="btn-check" id="btncheck14" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Six"
+                                            aria-expanded="false" aria-controls="collapseOne-One-Six">
                                         <label class="btn btn-outline-primary" for="btncheck14"></label>
-                                        <span style="padding: 0 5px">Drilling operations and contracts management </span><img src="images/quest.png">
-                                        <div id="collapseOne-One-Six" class="accordion-collapse collapse" aria-labelledby="headingOne-One-Six" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Drilling operations and contracts management
+                                        </span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-One-Six" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-One-Six" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <input type="checkbox" class="btn-check" id="btncheck15" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Seven" aria-expanded="false" aria-controls="collapseOne-One-Seven">
+                                        <input type="checkbox" class="btn-check" id="btncheck15" autocomplete="off"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne-One-Seven"
+                                            aria-expanded="false" aria-controls="collapseOne-One-Seven">
                                         <label class="btn btn-outline-primary" for="btncheck15"></label>
-                                        <span style="padding: 0 5px">Drilling contracting: tendering & evaluation</span><img src="images/quest.png">
-                                        <div id="collapseOne-One-Seven" class="accordion-collapse collapse" aria-labelledby="headingOne-One-Seven" data-bs-parent="#accordionExample">
+                                        <span style="padding: 0 5px">Drilling contracting: tendering &
+                                            evaluation</span><a href="" class="quest-link">.....</a>
+                                        <div id="collapseOne-One-Seven" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne-One-Seven" data-bs-parent="#accordionExample">
                                             <div class="dropbox-body RR" style="padding: 1rem 1rem;">
-                                            <div class="display-flex">
-                                                <span>1</span> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="1" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="2" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="3" aria-label="..."> <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="4" aria-label="..."><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="5" aria-label="..."><span>5</span>
-                                            </div>
-                        
-                                            <textarea class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
+                                                <div class="display-flex">
+                                                    <span>1</span>
+                                                    <div class="form-check-input" data-value="1"></div>
+                                                    <div class="form-check-input" data-value="2"></div>
+                                                    <div class="form-check-input" data-value="3"></div>
+                                                    <div class="form-check-input" data-value="4"></div>
+                                                    <div class="form-check-input" data-value="5"></div>
+                                                    </span><span>5</span>
+                                                </div>
+
+                                                <textarea class="textarea"
+                                                    placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                                                    name="text"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                              </div>
-                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-One" aria-expanded="false" aria-controls="collapseTwo-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Геология и геофизика</span></div>
-                            <div id="collapseTwo-One" class="accordion-collapse collapse" aria-labelledby="headingTwo-One" data-bs-parent="#accordionExample">
-                                <div class="dropbox-body RR" style="padding: 1rem 5rem;">
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo-One" aria-expanded="false"
+                                    aria-controls="collapseTwo-One" onclick="changeText(this)"
+                                    data-show="true">+</button><span class="RR pd-5">Геология и геофизика</span></div>
+                            <div id="collapseTwo-One" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo-One" data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
                                     <div>
-                                     
+
                                     </div>
-                                    
+
                                 </div>
-                              </div>
-                              <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-One" aria-expanded="false" aria-controls="collapseThree-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Управление проектами</span></div>
-                              <div id="collapseThree-One" class="accordion-collapse collapse" aria-labelledby="headingThree-One" data-bs-parent="#accordionExample">
-                                  <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                      <div>
-                                   
-                                      </div>
-                                      
-                                  </div>
-                                </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour-One" aria-expanded="false" aria-controls="collapseFour-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Инжиниринг</span></div>
-                                <div id="collapseFour-One" class="accordion-collapse collapse" aria-labelledby="headingFour-One" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree-One" aria-expanded="false"
+                                    aria-controls="collapseThree-One" onclick="changeText(this)"
+                                    data-show="true">+</button><span class="RR pd-5">Управление проектами</span></div>
+                            <div id="collapseThree-One" class="accordion-collapse collapse"
+                                aria-labelledby="headingThree-One" data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive-One" aria-expanded="false" aria-controls="collapseFive-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Разработка пластов</span></div>
-                                <div id="collapseFive-One" class="accordion-collapse collapse" aria-labelledby="headingFive-One" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour-One" aria-expanded="false"
+                                    aria-controls="collapseFour-One" onclick="changeText(this)"
+                                    data-show="true">+</button><span class="RR pd-5">Инжиниринг</span></div>
+                            <div id="collapseFour-One" class="accordion-collapse collapse"
+                                aria-labelledby="headingFour-One" data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix-One" aria-expanded="false" aria-controls="collapseSix-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Коммерческие компетенции</span></div>
-                                <div id="collapseSix-One" class="accordion-collapse collapse" aria-labelledby="headingSix-One" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive-One" aria-expanded="false"
+                                    aria-controls="collapseFive-One" onclick="changeText(this)"
+                                    data-show="true">+</button><span class="RR pd-5">Разработка пластов</span></div>
+                            <div id="collapseFive-One" class="accordion-collapse collapse"
+                                aria-labelledby="headingFive-One" data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR">
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven-One" aria-expanded="false" aria-controls="collapseSeven-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Управление персоналом (HR)</span></div>
-                                <div id="collapseSeven-One" class="accordion-collapse collapse" aria-labelledby="headingSeven-One" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix-One" aria-expanded="false"
+                                    aria-controls="collapseSix-One" onclick="changeText(this)"
+                                    data-show="true">+</button><span class="RR pd-5">Коммерческие компетенции</span>
+                            </div>
+                            <div id="collapseSix-One" class="accordion-collapse collapse"
+                                aria-labelledby="headingSix-One" data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR">
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight-One" aria-expanded="false" aria-controls="collapseEight-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Управление по коммуникации и общественным связям (PR)</span></div>
-                                <div id="collapseEight-One" class="accordion-collapse collapse" aria-labelledby="headingEight-One" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven-One" aria-expanded="false"
+                                    aria-controls="collapseSeven-One" onclick="changeText(this)"
+                                    data-show="true">+</button><span class="RR pd-5">Управление персоналом (HR)</span>
+                            </div>
+                            <div id="collapseSeven-One" class="accordion-collapse collapse"
+                                aria-labelledby="headingSeven-One" data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine-One" aria-expanded="false" aria-controls="collapseNine-One" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Энергетика</span></div>
-                                <div id="collapseNine-One" class="accordion-collapse collapse" aria-labelledby="headingNine-One" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight-One" aria-expanded="false"
+                                    aria-controls="collapseEight-One" onclick="changeText(this)"
+                                    data-show="true">+</button><span class="RR pd-5">Управление по коммуникации и
+                                    общественным связям (PR)</span></div>
+                            <div id="collapseEight-One" class="accordion-collapse collapse"
+                                aria-labelledby="headingEight-One" data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR">
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">ТКРС</span></div>
-                                <div id="collapse-10" class="accordion-collapse collapse" aria-labelledby="heading-10" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine-One" aria-expanded="false"
+                                    aria-controls="collapseNine-One" onclick="changeText(this)"
+                                    data-show="true">+</button><span class="RR pd-5">Энергетика</span></div>
+                            <div id="collapseNine-One" class="accordion-collapse collapse"
+                                aria-labelledby="headingNine-One" data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Капитальное строительство</span></div>
-                                <div id="collapse-11" class="accordion-collapse collapse" aria-labelledby="heading-11" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10"
+                                    onclick="changeText(this)" data-show="true">+</button><span
+                                    class="RR pd-5">ТКРС</span></div>
+                            <div id="collapse-10" class="accordion-collapse collapse" aria-labelledby="heading-10"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">ОТ, ПБ и ООС</span></div>
-                                <div id="collapse-12" class="accordion-collapse collapse" aria-labelledby="heading-12" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11"
+                                    onclick="changeText(this)" data-show="true">+</button><span
+                                    class="RR pd-5">Капитальное строительство</span></div>
+                            <div id="collapse-11" class="accordion-collapse collapse" aria-labelledby="heading-11"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR">
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-13" aria-expanded="false" aria-controls="collapse-13" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Логистика и транспорт</span></div>
-                                <div id="collapse-13" class="accordion-collapse collapse" aria-labelledby="heading-13" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12"
+                                    onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">ОТ, ПБ и
+                                    ООС</span></div>
+                            <div id="collapse-12" class="accordion-collapse collapse" aria-labelledby="heading-12"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR">
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-14" aria-expanded="false" aria-controls="collapse-14" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Нефтепереработка</span></div>
-                                <div id="collapse-14" class="accordion-collapse collapse" aria-labelledby="heading-14" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-13" aria-expanded="false" aria-controls="collapse-13"
+                                    onclick="changeText(this)" data-show="true">+</button><span
+                                    class="RR pd-5">Логистика и транспорт</span></div>
+                            <div id="collapse-13" class="accordion-collapse collapse" aria-labelledby="heading-13"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-15" aria-expanded="false" aria-controls="collapse-15" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Коммерция и логистика</span></div>
-                                <div id="collapse-15" class="accordion-collapse collapse" aria-labelledby="heading-15" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-14" aria-expanded="false" aria-controls="collapse-14"
+                                    onclick="changeText(this)" data-show="true">+</button><span
+                                    class="RR pd-5">Нефтепереработка</span></div>
+                            <div id="collapse-14" class="accordion-collapse collapse" aria-labelledby="heading-14"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-16" aria-expanded="false" aria-controls="collapse-16" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Супервайзинг ТКРС</span></div>
-                                <div id="collapse-16" class="accordion-collapse collapse" aria-labelledby="heading-16" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-15" aria-expanded="false" aria-controls="collapse-15"
+                                    onclick="changeText(this)" data-show="true">+</button><span
+                                    class="RR pd-5">Коммерция и логистика</span></div>
+                            <div id="collapse-15" class="accordion-collapse collapse" aria-labelledby="heading-15"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR">
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-17" aria-expanded="false" aria-controls="collapse-17" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Снабжение</span></div>
-                                <div id="collapse-17" class="accordion-collapse collapse" aria-labelledby="heading-17" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-16" aria-expanded="false" aria-controls="collapse-16"
+                                    onclick="changeText(this)" data-show="true">+</button><span
+                                    class="RR pd-5">Супервайзинг ТКРС</span></div>
+                            <div id="collapse-16" class="accordion-collapse collapse" aria-labelledby="heading-16"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-18" aria-expanded="false" aria-controls="collapse-18" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Повышение энергоэффективности</span></div>
-                                <div id="collapse-18" class="accordion-collapse collapse" aria-labelledby="heading-18" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-17" aria-expanded="false" aria-controls="collapse-17"
+                                    onclick="changeText(this)" data-show="true">+</button><span
+                                    class="RR pd-5">Снабжение</span></div>
+                            <div id="collapse-17" class="accordion-collapse collapse" aria-labelledby="heading-17"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-19" aria-expanded="false" aria-controls="collapse-19" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Проектирование в нефтепереработке и нефтегазохимии</span></div>
-                                <div id="collapse-19" class="accordion-collapse collapse" aria-labelledby="heading-19" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-18" aria-expanded="false" aria-controls="collapse-18"
+                                    onclick="changeText(this)" data-show="true">+</button><span
+                                    class="RR pd-5">Повышение энергоэффективности</span></div>
+                            <div id="collapse-18" class="accordion-collapse collapse" aria-labelledby="heading-18"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-20" aria-expanded="false" aria-controls="collapse-20" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Разработка шельфовых месторождений (при отработке разбивается на несколько компетенций)</span></div>
-                                <div id="collapse-20" class="accordion-collapse collapse" aria-labelledby="heading-20" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-19" aria-expanded="false" aria-controls="collapse-19"
+                                    onclick="changeText(this)" data-show="true">+</button><span
+                                    class="RR pd-5">Проектирование в нефтепереработке и нефтегазохимии</span></div>
+                            <div id="collapse-19" class="accordion-collapse collapse" aria-labelledby="heading-19"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR">
+                                    <div>
+
                                     </div>
+
                                 </div>
-                                <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-21" aria-expanded="false" aria-controls="collapse-21" onclick="changeText(this)" data-show="true">+</button><span class="RR pd-5">Экономика, финансы, бухгалтерский и налоговый учет (при отработке разбивается на несколько компетенций)</span></div>
-                                <div id="collapse-21" class="accordion-collapse collapse" aria-labelledby="heading-21" data-bs-parent="#accordionExample">
-                                    <div class="dropbox-body RR" style="padding: 1rem 5rem;">
-                                        <div>
-                                     
-                                        </div>
-                                        
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-20" aria-expanded="false" aria-controls="collapse-20"
+                                    onclick="changeText(this)" data-show="true">+</button><span
+                                    class="RR pd-5">Разработка шельфовых месторождений (при отработке разбивается на
+                                    несколько компетенций)</span></div>
+                            <div id="collapse-20" class="accordion-collapse collapse" aria-labelledby="heading-20"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
                                     </div>
+
                                 </div>
-                        </div> 
-                      </div>
+                            </div>
+                            <div><button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-21" aria-expanded="false" aria-controls="collapse-21"
+                                    onclick="changeText(this)" data-show="true">+</button><span
+                                    class="RR pd-5">Экономика, финансы, бухгалтерский и налоговый учет (при отработке
+                                    разбивается на несколько компетенций)</span></div>
+                            <div id="collapse-21" class="accordion-collapse collapse" aria-labelledby="heading-21"
+                                data-bs-parent="#accordionExample">
+                                <div class="dropbox-body RR" >
+                                    <div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                </div>
-                <!--  -->
-                <div>
-                    <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="changeText(this)" data-show="true">+</button><a class="RR pd-5">Midstream</a>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="dropbox-body">
-                          
-                        </div>
-                      </div>
-                </div>
-                <div>
-                    <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="changeText(this)" data-show="true">+</button><a class="RR pd-5">Downstream</a>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="dropbox-body">
-                          
-                        </div>
-                      </div>
-                </div>
-                <div>
-                    <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="changeText(this)" data-show="true">+</button><a class="RR pd-5">Alternative energy</a>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                        <div class="dropbox-body">
-                          
-                        </div>
-                      </div>
-                </div>
-                <div class="dropdown mgl-30">
-                    <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex;">Другое <img src="images/pg.png"></button>
-                    <div aria-labelledby="other" class="dropdown-menu dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+            </div>
+            <!--  -->
+            <div>
+                <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                    onclick="changeText(this)" data-show="true">+</button><a class="RR pd-5">Midstream</a>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="dropbox-body">
+
                     </div>
                 </div>
-                <p class="body-text__block pdl-30 mgt-40">Владение программным обеспечением*</p>
-                <div class="dropdown mgl-30">
-                    <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex; min-width: 50%;">Введите название ПО <img class="pdl-5"  src="images/pg.png"></button>
-                    <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+            </div>
+            <div>
+                <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                    onclick="changeText(this)" data-show="true">+</button><a class="RR pd-5">Downstream</a>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="dropbox-body">
+
                     </div>
                 </div>
-                <p class="body-text__block pdl-30 mgt-40">Владение программным обеспечением*</p>
-                <textarea class="textarea-link mgl-30" placeholder="Введите название ПО" name="text"></textarea>
-                <p class="body-text__block pdl-30 mgt-40">Ссылка на описание ПО</p>
-                <textarea class="textarea-link mgl-30" placeholder="Введите ссылку на сайт разработчика" name="text"></textarea>
-                <p class="body-text__block pdl-30 mgt-15">Компетенция, к которой относится ПО</p>
-                <div class="mgl-30 mgt-15">
-                    <input type="checkbox" class="btn-check" id="b" autocomplete="off" data-bs-toggle="collapse" data-bs-target="b" aria-expanded="false" aria-controls="b">
-                    <label class="btn btn-outline-primary " for="b"></label>
-                    <a class="RR pd-5 mgt-15">Upstream</a>
+            </div>
+            <div>
+                <button class="dropbox-button collapsed mgl-30" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                    onclick="changeText(this)" data-show="true">+</button><a class="RR pd-5">Alternative energy</a>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="dropbox-body">
+
+                    </div>
                 </div>
-                <div class="mgl-30 mgt-15">
-                    <input type="checkbox" class="btn-check" id="bb" autocomplete="off" data-bs-toggle="collapse" data-bs-target="bb" aria-expanded="false" aria-controls="bb">
-                    <label class="btn btn-outline-primary " for="bb"></label>
-                    <a class="RR pd-5 mgt-15">Midstream</a>
-                </div>
-                <div class="mgl-30 mgt-15">
-                    <input type="checkbox" class="btn-check" id="bbb" autocomplete="off" data-bs-toggle="collapse" data-bs-target="bbb" aria-expanded="false" aria-controls="bbb">
-                    <label class="btn btn-outline-primary " for="bbb"></label>
-                    <a class="RR pd-5 mgt-15">Downstream</a>
-                </div>
-                <div class="mgl-30 mgt-15">
-                    <input type="checkbox" class="btn-check" id="bbbb" autocomplete="off" data-bs-toggle="collapse" data-bs-target="bbbb" aria-expanded="false" aria-controls="bbbb">
-                    <label class="btn btn-outline-primary " for="bbbb"></label>
-                    <a class="RR pd-5 mgt-15">Alternative energy</a>
-                </div>
-                <p class="body-text__block pdl-30 mgt-20">Оцените ваш уровень владения ПО</p>
-                <div class="div-score pdl-30">
-                    <!-- рейтинг -->
-                    <textarea id="other" class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
-                    <a href="#" class="button-adds RR mgt-15">Добавить еще ПО</a>
-                </div>
-                <p class="body-text__block pdl-30 mgt-40">Технологии*</p>
-                <div class="mgl-30 mgt-15">
-                    <input type="checkbox" class="btn-check" id="n" autocomplete="off" data-bs-toggle="collapse" data-bs-target="n" aria-expanded="false" aria-controls="n">
-                    <label class="btn btn-outline-primary " for="n"></label>
-                    <a class="RR pd-5 mgt-15">Upstream</a>
-                </div>
-                <div class="mgl-30 mgt-15">
-                    <input type="checkbox" class="btn-check" id="nn" autocomplete="off" data-bs-toggle="collapse" data-bs-target="nn" aria-expanded="false" aria-controls="nn">
-                    <label class="btn btn-outline-primary " for="nn"></label>
-                    <a class="RR pd-5 mgt-15">Midstream</a>
-                </div>
-                <div class="mgl-30 mgt-15">
-                    <input type="checkbox" class="btn-check" id="nnn" autocomplete="off" data-bs-toggle="collapse" data-bs-target="nnn" aria-expanded="false" aria-controls="nnn">
-                    <label class="btn btn-outline-primary " for="nnn"></label>
-                    <a class="RR pd-5 mgt-15">Downstream</a>
-                </div>
-                <div class="mgl-30 mgt-15">
-                    <input type="checkbox" class="btn-check" id="nnnn" autocomplete="off" data-bs-toggle="collapse" data-bs-target="nnnn" aria-expanded="false" aria-controls="nnnn">
-                    <label class="btn btn-outline-primary " for="nnnn"></label>
-                    <a class="RR pd-5 mgt-15">Alternative energy</a>
-                </div>
-                <div class="dropdown mgl-30">
-                    <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex; min-width: 50%;">Выбор технологии<img class="pdl-5" src="images/pg.png"></button>
-                    <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+            </div>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex;">Другое <img src="images/pg.png"></button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
-                    </div>
                 </div>
-                <a href="#" class="button-adds RR pdl-30 pdt-20">Добавить свою технологию</a>  
-                <p class="body-text__block pdl-30 mgt-40">Ссылка на информацию о технологии</p>
-                <textarea  class="textarea-link mgl-30" placeholder="Если есть" name="text"></textarea>
-                <p class="body-text__block pdl-30 mgt-40">Оцените ваш уровень владения технологией</p>
-                <div class="div-score pdl-30">
-                    <!-- рейтинг -->
-                    <textarea id="other" class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
-                    <a href="#" class="button-adds RR mgt-15">Добавить еще технологию</a>
+            </div>
+            <p class="body-text__block pdl-30 mgt-40">Владение программным обеспечением*</p>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex; min-width: 50%;">Введите название ПО <img class="pdl-5"
+                        src="images/pg.png"></button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
-
-
-                    <p class="body-text__block pdl-30 mgt-40">Оборудование и материалы*</p>
-                    <div class="mgl-30 mgt-15">
-                        <input type="checkbox" class="btn-check" id="2" autocomplete="off" data-bs-toggle="collapse" data-bs-target="v" aria-expanded="false" aria-controls="v">
-                        <label class="btn btn-outline-primary " for="2"></label>
-                        <a class="RR pd-5 mgt-15">Upstream</a>
-                    </div>
-                    <div class="mgl-30 mgt-15">
-                        <input type="checkbox" class="btn-check" id="22" autocomplete="off" data-bs-toggle="collapse" data-bs-target="vv" aria-expanded="false" aria-controls="vv">
-                        <label class="btn btn-outline-primary " for="22"></label>
-                        <a class="RR pd-5 mgt-15">Midstream</a>
-                    </div>
-                    <div class="mgl-30 mgt-15">
-                        <input type="checkbox" class="btn-check" id="222" autocomplete="off" data-bs-toggle="collapse" data-bs-target="vvv" aria-expanded="false" aria-controls="vvv">
-                        <label class="btn btn-outline-primary " for="222"></label>
-                        <a class="RR pd-5 mgt-15">Downstream</a>
-                    </div>
-                    <div class="mgl-30 mgt-15">
-                        <input type="checkbox" class="btn-check" id="2222" autocomplete="off" data-bs-toggle="collapse" data-bs-target="vvvv" aria-expanded="false" aria-controls="vvvv">
-                        <label class="btn btn-outline-primary " for="2222"></label>
-                        <a class="RR pd-5 mgt-15">Alternative energy</a>
-                    </div>
-                    <div class="dropdown mgl-30">
-                        <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex; min-width: 50%;">Область компетенции <img src="images/pg.png"></button>
-                        <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        </div>
-                    </div>
-                    <a href="#" class="button-adds RR pdl-30 pdt-20">Добавить свое оборудовние/материал </a>
-                
-                    <p class="body-text__block pdl-30 mgt-40">Ссылка на информацию об оборудовании/материале</p>
-                    <textarea  class="textarea-link mgl-30" placeholder="Если есть" name="text"></textarea>
-                    <p class="body-text__block pdl-30 mgt-40">Оцените ваш уровень владения оборудованием</p>
-                    <div class="div-score pdl-30">
-                        <!-- рейтинг -->
-                        <textarea id="other" class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию" name="text"></textarea>
-                        <a href="#" class="button-adds RR mgt-15">Добавить оборудование/материал</a>
-                    </div>
+            </div>
+            <p class="body-text__block pdl-30 mgt-40">Владение программным обеспечением*</p>
+            <textarea class="textarea-link mgl-30" placeholder="Введите название ПО" name="text"></textarea>
+            <p class="body-text__block pdl-30 mgt-40">Ссылка на описание ПО</p>
+            <textarea class="textarea-link mgl-30" placeholder="Введите ссылку на сайт разработчика"
+                name="text"></textarea>
+            <p class="body-text__block pdl-30 mgt-15">Компетенция, к которой относится ПО</p>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="b" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="b" aria-expanded="false" aria-controls="b">
+                <label class="btn btn-outline-primary " for="b"></label>
+                <a class="RR pd-5 mgt-15">Upstream</a>
+            </div>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="bb" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="bb" aria-expanded="false" aria-controls="bb">
+                <label class="btn btn-outline-primary " for="bb"></label>
+                <a class="RR pd-5 mgt-15">Midstream</a>
+            </div>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="bbb" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="bbb" aria-expanded="false" aria-controls="bbb">
+                <label class="btn btn-outline-primary " for="bbb"></label>
+                <a class="RR pd-5 mgt-15">Downstream</a>
+            </div>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="bbbb" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="bbbb" aria-expanded="false" aria-controls="bbbb">
+                <label class="btn btn-outline-primary " for="bbbb"></label>
+                <a class="RR pd-5 mgt-15">Alternative energy</a>
+            </div>
+            <p class="body-text__block pdl-30 mgt-20">Оцените ваш уровень владения ПО</p>
+            <div class="div-score pdl-30">
+                <div class="display-flex">
+                    <span>1</span>
+                    <div class="form-check-input" data-value="1"></div>
+                    <div class="form-check-input" data-value="2"></div>
+                    <div class="form-check-input" data-value="3"></div>
+                    <div class="form-check-input" data-value="4"></div>
+                    <div class="form-check-input" data-value="5"></div>
+                    </span><span>5</span>
                 </div>
-
-
-                <div class="body-div mgt-30" >
-
-                    <p class="body-text__block-other pdl-30 mgt-40">Управленческо-лидерские компетенции</p>
-                    <p class="body-text__block pdl-30 mgt-40">Область управления</p>
-                    <div class="dropdown mgl-30">
-                        <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex; min-width: 50%;">Выбор оборудования/материалов<img src="images/pg.png"></button>
-                        <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        </div>
-                    </div>
-
-
-                    <p class="body-text__block-other pdl-30 mgt-40">Административно-управленческие показатели влияния</p>
-                    <p class="body-text__block pdl-30 mgt-40">Управленческий уровень*</p>
-                    <div class="dropdown mgl-30">
-                        <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex; min-width: 50%;">Выберите уровень<img src="images/pg.png"></button>
-                        <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        </div>
-                    </div>
-                    <p class="body-text__block pdl-30 mgt-40">Количество сотрудников в организации*</p>
-                    <div class="dropdown mgl-30">
-                        <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex; min-width: 50%;">Выберите количество<img src="images/pg.png"></button>
-                        <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        </div>
-                    </div>
-                    <p class="body-text__block pdl-30 mgt-40">Количество людей в прямом подчинении*</p>
-                    <div class="dropdown mgl-30">
-                        <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex; min-width: 50%;">Выберите количество<img src="images/pg.png"></button>
-                        <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        </div>
-                    </div>
-                    <p class="body-text__block pdl-30 mgt-40">Количество людей в косвенном подчинении*</p>
-                    <div class="dropdown mgl-30">
-                        <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex; min-width: 50%;">Выберите количество<img src="images/pg.png"></button>
-                        <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        </div>
-                    </div>
-                    <textarea id="comments" class="textarea mgl-30" placeholder="Текстовое поле для дополнительных комментариев к административно-управленческим показателям влияния" name="text"></textarea>
-                
-
-                    <p class="body-text__block-other pdl-30 mgt-40">Финансовые показатели влияния</p>
-                    <p class="body-text__block pdl-30 mgt-40">Уровень финансового влияния млн. $*</p>
-                    <div class="dropdown mgl-30">
-                        <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex; min-width: 50%;">  <0,1 <img src="images/pg.png"></button>
-                        <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        </div>
-                    </div>
-                    <p class="body-text__block pdl-30 mgt-40">Лимит финансовой ответственности млн. $*</p>
-                    <div class="dropdown mgl-30">
-                        <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex; min-width: 50%;">  <0,1 <img src="images/pg.png"></button>
-                        <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        </div>
-                    </div>
-                    <p class="body-text__block pdl-30 mgt-40">Масштаб/стоимость реализованных/реализуемых проектов/активов*</p>
-                    <div class="dropdown mgl-30">
-                        <button type="button"  data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn" style="display: flex; min-width: 50%;">  <0,1 <img src="images/pg.png"></button>
-                        <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                        </div>
-                    </div>
-                    <textarea id="comments" class="textarea mgl-30" placeholder="Текстовое поле для дополнительных комментариев к административно-управленческим показателям влияния" name="text"></textarea>
-               
-                    
-                    <p class="body-text__block-other pdl-30 mgt-40">Оценка управленческо-лидерских компетенций</p>
-                    <p class="body-text__block pdl-30 mgt-40">*Оцените уровень на шкале оценки от 1 до 5</p>
-                    
-                    <div class="display-flex">
-                        <p class="body-text__block pdl-30 pdr-10 mgt-20">Стратегическое мышление</p><img class="mgt-20 pdr-10" src="images/quest.png">
-                    </div>
-                    <!-- Rating -->
-                    <div class="display-flex">
-                        <p class="body-text__block pdl-30 pdr-10 mgt-20">Работа в команде</p><img class="mgt-20 pdr-10" src="images/quest.png">
-                    </div>
-                    <!-- Rating -->
-                    <div class="display-flex">
-                        <p class="body-text__block pdl-30 pdr-10 mgt-20">Ориентация на результат</p><img class="mgt-20 pdr-10" src="images/quest.png">
-                    </div>
-                    <!-- Rating -->
-                    <div class="display-flex">
-                        <p class="body-text__block pdl-30 pdr-10 mgt-20">Развитие подчиненных</p><img class="mgt-20 pdr-10" src="images/quest.png">
-                    </div>
-                    <!-- Rating -->
-                    <div class="display-flex">
-                        <p class="body-text__block pdl-30 pdr-10 mgt-20">Лидерство</p><img class="mgt-20 pdr-10" src="images/quest.png">
-                    </div>
-                    <!-- Rating -->
-                    <div class="display-flex">
-                        <p class="body-text__block pdl-30 pdr-10 mgt-20">Анализ и решение проблем</p><img class="mgt-20 pdr-10" src="images/quest.png">
-                    </div>
-                    <!-- Rating -->
-                    <div class="display-flex">
-                        <p class="body-text__block pdl-30 pdr-10 mgt-20">Управление задачами</p><img class="mgt-20 pdr-10" src="images/quest.png">
-                    </div>
-                    <!-- Rating -->
-                    <div class="display-flex">
-                        <p class="body-text__block pdl-30 pdr-10 mgt-20">Ориентация на развитие</p><img class="mgt-20 pdr-10" src="images/quest.png">
-                    </div>
-                    <!-- Rating -->
-                    <div class="display-flex">
-                        <p class="body-text__block pdl-30 pdr-10 mgt-20">Ориентация на высокие стандарты</p><img class="mgt-20 pdr-10" src="images/quest.png">
-                    </div>
-                    <!-- Rating -->
-                    <div class="display-flex">
-                        <p class="body-text__block pdl-30 pdr-10 mgt-20">Понимание бизнеса</p><img class="mgt-20 pdr-10" src="images/quest.png">
-                    </div>
-                    <!-- Rating -->
-                    <div class="display-flex" style="margin-bottom: 20px;">
-                        <p class="body-text__block pdl-30 pdr-10 mgt-20">Бизнес этика</p><img class="mgt-20 pdr-10" src="images/quest.png">
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="button-adds RR pdl-30 mgt-20">Добавить компетенцию</a>
-                    <textarea id="comments" class="textarea mgl-30" placeholder="Текстовое поле для дополнительных комментариев к управленческо-лидерским компетенциям" name="text"></textarea>
+                <textarea id="other" class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                    name="text"></textarea>
+                <a href="#" class="button-adds RR mgt-15">Добавить еще ПО</a>
+            </div>
+            <p class="body-text__block pdl-30 mgt-40">Технологии*</p>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="n" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="n" aria-expanded="false" aria-controls="n">
+                <label class="btn btn-outline-primary " for="n"></label>
+                <a class="RR pd-5 mgt-15">Upstream</a>
+            </div>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="nn" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="nn" aria-expanded="false" aria-controls="nn">
+                <label class="btn btn-outline-primary " for="nn"></label>
+                <a class="RR pd-5 mgt-15">Midstream</a>
+            </div>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="nnn" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="nnn" aria-expanded="false" aria-controls="nnn">
+                <label class="btn btn-outline-primary " for="nnn"></label>
+                <a class="RR pd-5 mgt-15">Downstream</a>
+            </div>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="nnnn" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="nnnn" aria-expanded="false" aria-controls="nnnn">
+                <label class="btn btn-outline-primary " for="nnnn"></label>
+                <a class="RR pd-5 mgt-15">Alternative energy</a>
+            </div>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex; min-width: 50%;">Выбор технологии<img class="pdl-5"
+                        src="images/pg.png"></button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
-                
+            </div>
+            <a href="#" class="button-adds RR pdl-30 pdt-20">Добавить свою технологию</a>
+            <p class="body-text__block pdl-30 mgt-40">Ссылка на информацию о технологии</p>
+            <textarea class="textarea-link mgl-30" placeholder="Если есть" name="text"></textarea>
+            <p class="body-text__block pdl-30 mgt-40">Оцените ваш уровень владения технологией</p>
+            <div class="div-score pdl-30">
+                <div class="display-flex">
+                    <span>1</span>
+                    <div class="form-check-input" data-value="1"></div>
+                    <div class="form-check-input" data-value="2"></div>
+                    <div class="form-check-input" data-value="3"></div>
+                    <div class="form-check-input" data-value="4"></div>
+                    <div class="form-check-input" data-value="5"></div>
+                    </span><span>5</span>
+                </div>
+                <textarea id="other" class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                    name="text"></textarea>
+                <a href="#" class="button-adds RR mgt-15">Добавить еще технологию</a>
+            </div>
+
+
+            <p class="body-text__block pdl-30 mgt-40">Оборудование и материалы*</p>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="2" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="v" aria-expanded="false" aria-controls="v">
+                <label class="btn btn-outline-primary " for="2"></label>
+                <a class="RR pd-5 mgt-15">Upstream</a>
+            </div>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="22" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="vv" aria-expanded="false" aria-controls="vv">
+                <label class="btn btn-outline-primary " for="22"></label>
+                <a class="RR pd-5 mgt-15">Midstream</a>
+            </div>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="222" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="vvv" aria-expanded="false" aria-controls="vvv">
+                <label class="btn btn-outline-primary " for="222"></label>
+                <a class="RR pd-5 mgt-15">Downstream</a>
+            </div>
+            <div class="mgl-30 mgt-15">
+                <input type="checkbox" class="btn-check" id="2222" autocomplete="off" data-bs-toggle="collapse"
+                    data-bs-target="vvvv" aria-expanded="false" aria-controls="vvvv">
+                <label class="btn btn-outline-primary " for="2222"></label>
+                <a class="RR pd-5 mgt-15">Alternative energy</a>
+            </div>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex; min-width: 50%;">Область компетенции <img src="images/pg.png"></button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <a href="#" class="button-adds RR pdl-30 pdt-20">Добавить свое оборудовние/материал </a>
+
+            <p class="body-text__block pdl-30 mgt-40">Ссылка на информацию об оборудовании/материале</p>
+            <textarea class="textarea-link mgl-30" placeholder="Если есть" name="text"></textarea>
+            <p class="body-text__block pdl-30 mgt-40">Оцените ваш уровень владения оборудованием</p>
+            <div class="div-score pdl-30">
+                <div class="display-flex">
+                    <span>1</span>
+                    <div class="form-check-input" data-value="1"></div>
+                    <div class="form-check-input" data-value="2"></div>
+                    <div class="form-check-input" data-value="3"></div>
+                    <div class="form-check-input" data-value="4"></div>
+                    <div class="form-check-input" data-value="5"></div>
+                    </span><span>5</span>
+                </div>
+                <textarea id="other" class="textarea" placeholder="Опишите ваш опыт, подтверждающий вашу компетенцию"
+                    name="text"></textarea>
+                <a href="#" class="button-adds RR mgt-15">Добавить оборудование/материал</a>
+            </div>
+        </div>
+
+
+        <div class="body-div mgt-30">
+
+            <p class="body-text__block-other pdl-30 mgt-40">Управленческо-лидерские компетенции</p>
+            <p class="body-text__block pdl-30 mgt-40">Область управления</p>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex; min-width: 50%;">Выбор оборудования/материалов<img
+                        src="images/pg.png"></button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+
+            <p class="body-text__block-other pdl-30 mgt-40">Административно-управленческие показатели влияния</p>
+            <p class="body-text__block pdl-30 mgt-40">Управленческий уровень*</p>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex; min-width: 50%;">Выберите уровень<img src="images/pg.png"></button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <p class="body-text__block pdl-30 mgt-40">Количество сотрудников в организации*</p>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex; min-width: 50%;">Выберите количество<img src="images/pg.png"></button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <p class="body-text__block pdl-30 mgt-40">Количество людей в прямом подчинении*</p>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex; min-width: 50%;">Выберите количество<img src="images/pg.png"></button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <p class="body-text__block pdl-30 mgt-40">Количество людей в косвенном подчинении*</p>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex; min-width: 50%;">Выберите количество<img src="images/pg.png"></button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <textarea id="comments" class="textarea mgl-30"
+                placeholder="Текстовое поле для дополнительных комментариев к административно-управленческим показателям влияния"
+                name="text"></textarea>
+
+
+            <p class="body-text__block-other pdl-30 mgt-40">Финансовые показатели влияния</p>
+            <p class="body-text__block pdl-30 mgt-40">Уровень финансового влияния млн. $*</p>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex; min-width: 50%;">
+                    <0,1 <img src="images/pg.png">
+                </button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <p class="body-text__block pdl-30 mgt-40">Лимит финансовой ответственности млн. $*</p>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex; min-width: 50%;">
+                    <0,1 <img src="images/pg.png">
+                </button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <p class="body-text__block pdl-30 mgt-40">Масштаб/стоимость реализованных/реализуемых проектов/активов*</p>
+            <div class="dropdown mgl-30">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropbtn"
+                    style="display: flex; min-width: 50%;">
+                    <0,1 <img src="images/pg.png">
+                </button>
+                <div aria-labelledby="other" class="dropdown-menu dropdown-content" style="min-width: 280px;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <textarea id="comments" class="textarea mgl-30"
+                placeholder="Текстовое поле для дополнительных комментариев к административно-управленческим показателям влияния"
+                name="text"></textarea>
+
+
+            <p class="body-text__block-other pdl-30 mgt-40">Оценка управленческо-лидерских компетенций</p>
+            <p class="body-text__block pdl-30 mgt-40">*Оцените уровень на шкале оценки от 1 до 5</p>
+            <div>
+            <div class="display-flex">
+                <p class="body-text__block pdl-30 pdr-10 mgt-20">Стратегическое мышление</p><a href="" class="quest-link">.....</a>
+            </div>
+            <div class="display-flex">
+                <span id="spans">1</span>
+                <div class="form-check-input" data-value="1"></div>
+                <div class="form-check-input" data-value="2"></div>
+                <div class="form-check-input" data-value="3"></div>
+                <div class="form-check-input" data-value="4"></div>
+                <div class="form-check-input" data-value="5"></div>
+                </span><span>5</span>
+            </div>
+            <div class="display-flex">
+                <p class="body-text__block pdl-30 pdr-10 mgt-20">Работа в команде</p><a href="" class="quest-link ">.....</a>
+            </div>
+            <div class="display-flex">
+                <span id="spans">1</span>
+                <div class="form-check-input" data-value="1"></div>
+                <div class="form-check-input" data-value="2"></div>
+                <div class="form-check-input" data-value="3"></div>
+                <div class="form-check-input" data-value="4"></div>
+                <div class="form-check-input" data-value="5"></div>
+                </span><span>5</span>
+            </div>
+            <div class="display-flex">
+                <p class="body-text__block pdl-30 pdr-10 mgt-20">Ориентация на результат</p><a href="" class="quest-link ">.....</a>
+            </div>
+            <div class="display-flex">
+                <span id="spans">1</span>
+                <div class="form-check-input" data-value="1"></div>
+                <div class="form-check-input" data-value="2"></div>
+                <div class="form-check-input" data-value="3"></div>
+                <div class="form-check-input" data-value="4"></div>
+                <div class="form-check-input" data-value="5"></div>
+                </span><span>5</span>
+            </div>
+            <div class="display-flex">
+                <p class="body-text__block pdl-30 pdr-10 mgt-20">Развитие подчиненных</p><a href="" class="quest-link ">.....</a>
+            </div>  
+                <div class="display-flex">
+                <span id="spans">1</span>
+                <div class="form-check-input" data-value="1"></div>
+                <div class="form-check-input" data-value="2"></div>
+                <div class="form-check-input" data-value="3"></div>
+                <div class="form-check-input" data-value="4"></div>
+                <div class="form-check-input" data-value="5"></div>
+                </span><span>5</span>
+            </div>
+            <div class="display-flex">
+                <p class="body-text__block pdl-30 pdr-10 mgt-20">Лидерство</p><a href="" class="quest-link ">.....</a>
+            </div>
+            <div class="display-flex">
+                <span id="spans">1</span>
+                <div class="form-check-input" data-value="1"></div>
+                <div class="form-check-input" data-value="2"></div>
+                <div class="form-check-input" data-value="3"></div>
+                <div class="form-check-input" data-value="4"></div>
+                <div class="form-check-input" data-value="5"></div>
+                </span><span>5</span>
+            </div>
+            <div class="display-flex">
+                <p class="body-text__block pdl-30 pdr-10 mgt-20">Анализ и решение проблем</p><a href="" class="quest-link ">.....</a>
+            </div>
+                <div class="display-flex">
+                <span id="spans">1</span>
+                <div class="form-check-input" data-value="1"></div>
+                <div class="form-check-input" data-value="2"></div>
+                <div class="form-check-input" data-value="3"></div>
+                <div class="form-check-input" data-value="4"></div>
+                <div class="form-check-input" data-value="5"></div>
+                </span><span>5</span>
+            </div>
+            <div class="display-flex">
+                <p class="body-text__block pdl-30 pdr-10 mgt-20">Управление задачами</p><a href="" class="quest-link ">.....</a>
+            </div>
+                <div class="display-flex">
+                <span id="spans">1</span>
+                <div class="form-check-input" data-value="1"></div>
+                <div class="form-check-input" data-value="2"></div>
+                <div class="form-check-input" data-value="3"></div>
+                <div class="form-check-input" data-value="4"></div>
+                <div class="form-check-input" data-value="5"></div>
+                </span><span>5</span>
+            </div>
+            <div class="display-flex">
+                <p class="body-text__block pdl-30 pdr-10 mgt-20">Ориентация на развитие</p><a href="" class="quest-link">.....</a>
+            </div>
+            <div class="display-flex">
+                <span id="spans">1</span>
+                <div class="form-check-input" data-value="1"></div>
+                <div class="form-check-input" data-value="2"></div>
+                <div class="form-check-input" data-value="3"></div>
+                <div class="form-check-input" data-value="4"></div>
+                <div class="form-check-input" data-value="5"></div>
+                </span><span>5</span>
+            </div>
+            <div class="display-flex">
+                <p class="body-text__block pdl-30 pdr-10 mgt-20">Ориентация на высокие стандарты</p><a href="" class="quest-link ">.....</a>
+            </div>
+            <div class="display-flex">
+                <span id="spans">1</span>
+                <div class="form-check-input" data-value="1"></div>
+                <div class="form-check-input" data-value="2"></div>
+                <div class="form-check-input" data-value="3"></div>
+                <div class="form-check-input" data-value="4"></div>
+                <div class="form-check-input" data-value="5"></div>
+                </span><span>5</span>
+            </div>
+            <div class="display-flex">
+                <p class="body-text__block pdl-30 pdr-10 mgt-20">Понимание бизнеса</p><a href="" class="quest-link">.....</a>
+            </div>
+            <div class="display-flex">
+                <span id="spans">1</span>
+                <div class="form-check-input" data-value="1"></div>
+                <div class="form-check-input" data-value="2"></div>
+                <div class="form-check-input" data-value="3"></div>
+                <div class="form-check-input" data-value="4"></div>
+                <div class="form-check-input" data-value="5"></div>
+                </span><span>5</span>
+            </div>
+            <div class="display-flex" style="margin-bottom: 20px;">
+                <p class="body-text__block pdl-30 pdr-10 mgt-20">Бизнес этика</p><a href="" class="quest-link ">.....</a>
+            </div>
+            <div class="display-flex">
+                <span id="#spans">1</span>
+                <div class="form-check-input" data-value="1"></div>
+                <div class="form-check-input" data-value="2"></div>
+                <div class="form-check-input" data-value="3"></div>
+                <div class="form-check-input" data-value="4"></div>
+                <div class="form-check-input" data-value="5"></div>
+                </span><span>5</span>
+            </div>
+            <a href="#" class="button-adds RR pdl-30 mgt-20">Добавить компетенцию</a>
+            <textarea id="comments" class="textarea mgl-30"
+                placeholder="Текстовое поле для дополнительных комментариев к управленческо-лидерским компетенциям"
+                name="text"></textarea>
+        </div>
         </div>
     </div>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 
 </script>
 <script src="js/func.js"></script>
 <script src="js/jq.js"></script>
 <!-- <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
 </html>
